@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Vibes</title>
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="detyre.css">
+            <script>
+        $(document).ready(function(){
+            $('p').on({
+                mouseenter:function(){
+                    $(this).css('background-color','orange')
+                },
+                mouseleave:function(){
+                    $(this).css('background-color','gold') 
+                },
+                click:function(){
+                    $(this).hide(5000);
+                }
+            });
+            $('h1').dblclick(function(){
+                $('p').show('slow')
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My favorite artists</h1>
+        <nav>
+            <ul>
+                <li><a href="#travis-scott">Travis Scott</a></li>
+                <li><a href="#dua-lipa">Dua Lipa</a></li>
+                <li><a href="#central-cee">Central Cee</a></li>
+                <li><a href="#miley-cyrus">Miley Cyrus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="travis-scott">
+            <h2>Travis Scott</h2>
+            <img src="download-travis-scott-wallpaper-vzga6ybcenlu0g62 (1).jpg" alt="Travis Scott">
+            <p>Born on April 30, 1992, in Houston, Texas</p>
+            <p>Known for hits like "Sicko Mode" and "Antidote"</p>
+            <button>Play Music</button>
+        </section>
+        <section id="dua-lipa">
+            <h2>Dua Lipa</h2>
+            <img src="Dua Lipa Portrait Session.jpg" alt="Dua Lipa">
+            <p>Born on August 22, 1995, in London, England</p>
+            <p>Known for hits like "New Rules" and "Don't Start Now"</p>
+            <button>Play Music</button>
+        </section>
+        <section id="central-cee">
+            <h2>Central Cee</h2>
+            <img src="34+-+SUN.jpeg" alt="Central Cee">
+            <p>Born on June 4, 1998, in London, England</p>
+            <p>Known for hits like "Sprinter" and "Bang 4 Bang"</p>
+            <button>Play Music</button>
+        </section>
+        <section id="miley-cyrus">
+            <h2>Miley Cyrus</h2>
+            <img src="Flowers-Miley-Cyrus-Best-Online-Piano-Keyboard-Virtual-Piano.webp" alt="Miley Cyrus">
+            <p>Born on August 23, 1992, in Franklin, Tennessee</p>
+            <p>Known for hits like "Wrecking Ball" and "Malibu"</p>
+            <button>Play Music</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sonic Vibes</p>
+    </footer>
+</body>
+</html>
